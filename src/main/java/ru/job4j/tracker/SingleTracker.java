@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SingleTracker {
     private static SingleTracker instance = null;
-    private Tracker tracker = new Tracker();
+    private Store store = new MemTracker();
 
     public static SingleTracker getInstance() {
         if (instance == null) {
@@ -14,26 +14,26 @@ public class SingleTracker {
     }
 
     public Item add(Item item) {
-        return tracker.add(item);
+        return store.add(item);
     }
 
     public Item findById(int id) {
-        return tracker.findById(id);
+        return store.findById(id);
     }
 
     public List<Item> findAll() {
-        return tracker.findAll();
+        return store.findAll();
     }
 
     public List<Item> findByName(String key) {
-        return tracker.findByName(key);
+        return store.findByName(key);
     }
 
     public boolean replace(int id, Item item) {
-        return tracker.replace(id, item);
+        return store.replace(id, item);
     }
 
     public void delete(int id) {
-        tracker.delete(id);
+        store.delete(id);
     }
 }
