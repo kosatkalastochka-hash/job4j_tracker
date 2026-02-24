@@ -34,12 +34,8 @@ public class SqlTracker implements Store {
         }
     }
 
-    private Item createItem(int id, String name, Timestamp created){
-        Item item = new Item();
-        item.setId(id);
-        item.setName(name);
-        item.setCreated(created.toLocalDateTime());
-        return item;
+    private Item createItem(ResultSet rs) throws SQLException {
+        return new Item(rs.getInt("id"), rs.getString("name"), rs.getTimestamp("created").toLocalDateTime());
     }
 
     @Override
@@ -83,6 +79,7 @@ public class SqlTracker implements Store {
         String sql = "DELETE FROM items WHERE id = ?";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, id);
+            statement.execute();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
@@ -94,7 +91,7 @@ public class SqlTracker implements Store {
         try (Statement statement = connection.createStatement()) {
             ResultSet rs = statement.executeQuery("SELECT * FROM items");
             while (rs.next()) {
-                Item item = createItem(rs.getInt("id"), rs.getString("name"), rs.getTimestamp("created"));
+               Item item = createItem(rs);
                 result.add(item);
             }
         } catch (SQLException e) {
@@ -111,7 +108,7 @@ public class SqlTracker implements Store {
             statement.setString(1, key);
             ResultSet rs = statement.executeQuery();
             while (rs.next()) {
-                Item item = createItem(rs.getInt("id"), rs.getString("name"), rs.getTimestamp("created"));
+                Item item = createItem(rs);
                 result.add(item);
             }
         } catch (SQLException e) {
@@ -127,7 +124,7 @@ public class SqlTracker implements Store {
             statement.setInt(1, id);
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
-                return createItem(rs.getInt("id"), rs.getString("name"), rs.getTimestamp("created"));
+                return createItem(rs);
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
