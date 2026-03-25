@@ -1,0 +1,45 @@
+[0.013s][info][gc] Using Parallel
+[0.126s][info][gc] GC(0) Pause Young (Allocation Failure) 3M->1M(11M) 1.795ms
+[7.174s][info][gc] GC(1) Pause Young (Allocation Failure) 4M->3M(11M) 2.314ms
+[7.296s][info][gc] GC(2) Pause Young (Allocation Failure) 6M->4M(11M) 1.950ms
+[7.403s][info][gc] GC(3) Pause Young (Allocation Failure) 7M->4M(11M) 2.048ms
+[7.441s][info][gc] GC(4) Pause Young (Allocation Failure) 7M->5M(11M) 2.478ms
+[7.467s][info][gc] GC(5) Pause Young (Allocation Failure) 8M->7M(10M) 2.459ms
+[7.476s][info][gc] GC(6) Pause Full (Ergonomics) 7M->5M(11M) 9.060ms
+[7.559s][info][gc] GC(7) Pause Young (Allocation Failure) 7M->6M(11M) 1.350ms
+[7.710s][info][gc] GC(8) Pause Young (Allocation Failure) 8M->6M(11M) 1.680ms
+[7.800s][info][gc] GC(9) Pause Young (Allocation Failure) 8M->7M(11M) 1.154ms
+[7.898s][info][gc] GC(10) Pause Young (Allocation Failure) 9M->7M(11M) 2.109ms
+[7.915s][info][gc] GC(11) Pause Full (Ergonomics) 7M->5M(11M) 16.515ms
+[8.020s][info][gc] GC(12) Pause Young (Allocation Failure) 7M->5M(11M) 3.683ms
+[9.091s][info][gc] GC(13) Pause Young (Allocation Failure) 7M->6M(11M) 3.755ms
+[15.117s][info][gc] GC(14) Pause Young (Allocation Failure) 8M->6M(11M) 1.169ms
+[35.111s][info][gc] GC(15) Pause Young (Allocation Failure) 8M->6M(11M) 1.161ms
+[45.160s][info][gc] GC(16) Pause Young (Allocation Failure) 8M->7M(11M) 0.642ms
+[45.182s][info][gc] GC(17) Pause Full (Ergonomics) 7M->6M(11M) 22.626ms
+[60.202s][info][gc] GC(18) Pause Full (Ergonomics) 8M->6M(11M) 16.396ms
+[61.859s][info][gc] GC(19) Pause Full (Ergonomics) 8M->7M(11M) 14.258ms
+[61.873s][info][gc] GC(20) Pause Full (Ergonomics) 9M->7M(11M) 10.141ms
+[61.882s][info][gc] GC(21) Pause Full (Ergonomics) 9M->7M(11M) 7.353ms
+[61.892s][info][gc] GC(22) Pause Full (Ergonomics) 9M->7M(11M) 7.454ms
+[61.902s][info][gc] GC(23) Pause Full (Ergonomics) 9M->7M(11M) 7.751ms
+[61.911s][info][gc] GC(24) Pause Full (Ergonomics) 9M->7M(11M) 7.496ms
+[61.921s][info][gc] GC(25) Pause Full (Ergonomics) 9M->7M(11M) 7.410ms
+[61.932s][info][gc] GC(26) Pause Full (Ergonomics) 9M->8M(11M) 9.070ms
+[61.942s][info][gc] GC(27) Pause Full (Ergonomics) 9M->8M(11M) 8.026ms
+[61.952s][info][gc] GC(28) Pause Full (Ergonomics) 9M->8M(11M) 8.278ms
+[61.962s][info][gc] GC(29) Pause Full (Ergonomics) 9M->8M(11M) 7.950ms
+[61.972s][info][gc] GC(30) Pause Full (Ergonomics) 9M->8M(11M) 7.979ms
+[61.981s][info][gc] GC(31) Pause Full (Ergonomics) 9M->8M(11M) 7.533ms
+[61.991s][info][gc] GC(32) Pause Full (Ergonomics) 9M->8M(11M) 8.604ms
+[62.001s][info][gc] GC(33) Pause Full (Ergonomics) 9M->8M(11M) 7.988ms
+[67.215s][info][gc] GC(34) Pause Full (Ergonomics) 9M->6M(11M) 19.692ms
+[87.245s][info][gc] GC(35) Pause Full (Ergonomics) 8M->6M(11M) 12.487ms
+[98.265s][info][gc] GC(36) Pause Full (Ergonomics) 8M->7M(11M) 9.759ms
+[119.276s][info][gc] GC(37) Pause Full (Ergonomics) 9M->7M(11M) 10.223ms
+[140.268s][info][gc] GC(38) Pause Full (Ergonomics) 9M->7M(11M) 8.668ms
+[161.317s][info][gc] GC(39) Pause Full (Ergonomics) 9M->7M(11M) 9.820ms
+[182.294s][info][gc] GC(40) Pause Full (Ergonomics) 9M->7M(11M) 8.609ms
+[203.338s][info][gc] GC(41) Pause Full (Ergonomics) 9M->6M(11M) 23.809ms
+[213.337s][info][gc] GC(42) Pause Full (Ergonomics) 8M->7M(11M) 10.794ms
+[234.367s][info][gc] GC(43) Pause Full (Ergonomics) 9M->6M(11M) 10.425ms

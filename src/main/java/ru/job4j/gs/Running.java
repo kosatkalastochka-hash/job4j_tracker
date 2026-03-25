@@ -1,4 +1,4 @@
-package ru.job4j.memory;
+package ru.job4j.gs;
 
 import ru.job4j.tracker.ConsoleInput;
 import ru.job4j.tracker.ConsoleOutput;
